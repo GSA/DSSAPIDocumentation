@@ -8,6 +8,7 @@ layout: default
 The vision of Digital Signature Solution (DSS) is to deploy a solution, which contributes to the Digital Government Strategy, enabling a truly digital and paperless GSA.
 
 The key goals of Digital Signature solution are:
+
   1) Security, Certainty & Confidence in Business Processes through:
      a. Authentication: establishes an identity for an electronic transaction
      b. Integrity: ensures data is in its original form and is not altered in any way en route to the recipient
