@@ -6,7 +6,7 @@ nav: contact_us
 ---
 ### Executive Sponsor
 
-Kris Rawley kris.rowley@gsa.gov
+David Shive david.shive@gsa.gov
 
 ### Application Owner
 Kim Tuyen Tran kim-tuyen.tran@gsa.gov
