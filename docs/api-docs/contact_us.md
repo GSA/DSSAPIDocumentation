@@ -9,11 +9,11 @@ nav: contact_us
 Kris Rawley kris.rowley@gsa.gov
 
 ### Application Owner
-Richard Shaw richard.shaw@gsa.gov
+Kim Tuyen Tran kim-tuyen.tran@gsa.gov
 
 ### Business Project Managers
 Richard Shaw richard.shaw@gsa.gov
-Kim Tuyen Tran kim-tuyen.tran@gsa.gov
+
 
 ### DSS Team
 dssteam@gsa.gov
