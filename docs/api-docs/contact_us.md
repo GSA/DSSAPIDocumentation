@@ -4,13 +4,18 @@ title: Contact Us
 nav: contact_us
 
 ---
-### Support
+### Executive Sponsor
 
-To receive support or ask questions about the API, post an issue in our [GitHub issues](https://github.com/GSA/GSA-APIs/issues).
+Kris Rawley kris.rowley@gsa.gov
 
-Be sure to check out our [Frequently Asked Questions page](FAQ.html), which may answer your questions.
+### Application Owner
+Richard Shaw richard.shaw@gsa.gov
 
-### Alternate Contact
-If you are unable to post an an issue in GitHub, email us at [example@gsa.gov](example@gsa.gov).
+### Business Project Managers
+Richard Shaw richard.shaw@gsa.gov
+Kim Tuyen Tran kim-tuyen.tran@gsa.gov
+
+### DSS Team
+dssteam@gsa.gov
 
 <body id="getting_support"></body>
