@@ -9,12 +9,26 @@ The vision of Digital Signature Solution (DSS) is to deploy a solution, which co
 
 The key goals of Digital Signature solution are:
   1) Security, Certainty & Confidence in Business Processes through:
+
+
      a. Authentication: establishes an identity for an electronic transaction
+
+
      b. Integrity: ensures data is in its original form and is not altered in any way en route to the recipient
+
+
      c. Non-Repudiation: binds signers to the information that they sign
+
+
      d. Auditability / Timestamp: defines who signed, the order, and when
+
+
   2) Mobility: ANYTIME, ANYWHERE, ANY DEVICE
+
+
   3) Interoperability
+
+
   4) ROI: Shortest Payback Period of all IT investments
 
 
