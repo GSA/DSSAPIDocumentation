@@ -6,7 +6,7 @@ nav: basics
 
 ### Getting Started
 
-The current version of the API lives at ```https://api.gsa.gov/v3/path```.
+The current version of the API lives at ```https://api.gsa.gov/operations/signature/Packages/```.
 
 - One example of a way to use it.
 - Another example of a way to use it.
