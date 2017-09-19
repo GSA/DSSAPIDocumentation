@@ -22,9 +22,9 @@
 	"paths": {
 		"/Packages/CreateMultiPart": {
 			"post": {
-				"tags": ["PackagesCreateMultiPart"],
+				"tags": ["Packages"],
 				"summary": "Multipart Upload Package creation",
-				"description": "Multipart Upload Package creation",
+				"description": "Create package using multipart file upload",
 				"operationId": "dssUniversalConnectorMultiPart",
 				"consumes": ["multipart/form-data"],
 				"produces": ["application/json"],
@@ -68,7 +68,7 @@
 		},
 		"/Packages/CreateWithDocumentLayout": {
 			"post": {
-				"tags": ["PackagesCreateWithDocumentLayout"],
+				"tags": ["Packages"],
 				"summary": "DSS create Package from layout",
 				"description": "DSS  create Package from layout",
 				"operationId": "dssCreatePackageFromDocLayout",
@@ -91,7 +91,7 @@
 		},
 		"/Packages/CreateWithDocumentLayoutMultipart": {
 			"post": {
-				"tags": ["PackagesCreateWithDocumentLayoutMultipart"],
+				"tags": ["Packages"],
 				"summary": "DSS create Package from layout multipart file transfer",
 				"description": "DSS create Package from layout multipart file transfer",
 				"operationId": "dssCreatePackageFromDocLayoutMultipart",
@@ -154,7 +154,7 @@
 		},
 		"/Packages/CreateWithTemplate": {
 			"post": {
-				"tags": ["PackagesCreateWithTemplate"],
+				"tags": ["Packages"],
 				"summary": "DSS create Package from template",
 				"description": "DSS create Package from template",
 				"operationId": "dssCreatePackageFromTemplate",
@@ -177,7 +177,7 @@
 		},
 		"/dssUniversalConnector": {
 			"post": {
-				"tags": ["PackagesCreate"],
+				"tags": ["Packages"],
 				"summary": "DSS Create Package",
 				"description": "DSS Create Package",
 				"operationId": "dssUniversalConnector",
