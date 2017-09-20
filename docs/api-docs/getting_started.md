@@ -8,16 +8,12 @@ nav: basics
 
 The current version of the API lives at ```https://api.gsa.gov/operations/signature/Packages/```.
 
-- TODO One example of a way to use it.
-- TODO Another example of a way to use it.
 
 #### Versions
 
 | Version | Date | Changes
 | ------------- | -------------|
-| ```version 1``` | 1/1/2095 | TODO Initial deployment
-| ```version 2``` | 3/1/2096 | TODO Changed data structure to fit congressional mandate
-| ```version 3``` | 3/1/2099 | TODO Request pattern changed for new requirements
+| ```version 1``` | 9/25/2017 | Initial deployment
 
 #### Endpoints
 
