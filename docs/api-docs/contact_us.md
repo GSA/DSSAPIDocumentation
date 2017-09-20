@@ -5,11 +5,10 @@ nav: contact_us
 
 ---
 ### Executive Sponsor
-
 David Shive david.shive@gsa.gov
 
 ### Application Owner
-Kim Tuyen Tran kim-tuyen.tran@gsa.gov
+Ryan Edelstein ryan.edelstein@gsa.gov
 
 ### Business Project Managers
 Richard Shaw richard.shaw@gsa.gov
