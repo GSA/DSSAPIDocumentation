@@ -884,6 +884,14 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     padding: 0;
 }
 
+/* hiding operations that freeze browser */
+#data_getDataset_get_1.operation.post {
+    display: none;
+}
+
+#hmda_getDatasetHmda_get_0.operation.post {
+    display: none;
+}
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading {
     float: none;
