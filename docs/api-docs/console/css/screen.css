@@ -884,6 +884,14 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     padding: 0;
 }
 
+/* hiding operations that freeze browser */
+#data_getDataset_get_1.operation.post {
+    display: none;
+}
+
+#hmda_getDatasetHmda_get_0.operation.post {
+    display: none;
+}
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading {
     float: none;
@@ -1090,22 +1098,27 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     padding: 0;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.http_method a {
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.http_method a {
     text-transform: uppercase;
-    background-color: #c5862b;
+    background-color: #10a54a;
     text-decoration: none;
     color: white;
     display: inline-block;
-    width: 50px;
+	font-size: .64em;
+    font-weight: bold;
+    text-align: center;
+    padding: .64em 1.25em;
+    border-bottom: none;
+    /*width: 50px;
     font-size: 0.7em;
     text-align: center;
-    padding: 7px 0 4px;
+    padding: 7px 0 4px 0;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     -o-border-radius: 2px;
     -ms-border-radius: 2px;
     -khtml-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px;*/
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.heading h3 span.path {
@@ -1162,12 +1175,12 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     text-decoration: none;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content {
-    background-color: #faf5ee;
-    border: 1px solid #f0e0ca;
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content {
+    background-color: #ebf7f0;
+    border: 1px solid #c3e8d1;
     border-top: none;
     padding: 10px;
-    -moz-border-radius-bottomleft: 6px;
+    /*-moz-border-radius-bottomleft: 6px;
     -webkit-border-bottom-left-radius: 6px;
     -o-border-bottom-left-radius: 6px;
     -ms-border-bottom-left-radius: 6px;
@@ -1178,9 +1191,10 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     -o-border-bottom-right-radius: 6px;
     -ms-border-bottom-right-radius: 6px;
     -khtml-border-bottom-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;*/
     margin: 0 0 20px;
 }
+
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content h4 {
     color: #c5862b;
@@ -1201,12 +1215,25 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     display: block;
 }
 
-body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content div.sandbox_header input.submit {
+body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.content div.sandbox_header input.submit {
     display: block;
     clear: none;
     float: left;
     padding: 6px 8px;
+	border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-right: 1em;
+    font-family: "Avenir Next Medium", Arial, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #75787B;
+    text-decoration: none;
+    transition: .1s;
+    -webkit-transition: .1s;
+    font-size: .875em;
+    border: none;
 }
+
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.put div.content div.sandbox_header img {
     display: block;
