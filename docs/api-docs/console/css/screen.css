@@ -939,8 +939,10 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.path {
-    padding-left: 10px;
-    padding-bottom: 0;
+    /*padding-left: 10px;
+    padding-bottom: 0;*/
+    padding-left: .5em;
+    font-size: .5em;
 }
 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post div.heading h3 span.path a {
