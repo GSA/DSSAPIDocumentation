@@ -874,7 +874,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
 
 
 
-/* THESE ARE FOR POST CALLS ONLY 
+/* THESE ARE FOR POST CALLS ONLY*/ 
 body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation.post {
     float: none;
     clear: both;
