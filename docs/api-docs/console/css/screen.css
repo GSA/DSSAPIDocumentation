@@ -879,7 +879,7 @@ body ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operatio
     float: none;
     clear: both;
     overflow: hidden;
-    display: block;
+    /*display: block;*/
     margin: 0 0 10px;
     padding: 0;
 }
