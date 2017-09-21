@@ -5,19 +5,6 @@
 		"title": "GSA DSS API"
 	},
 	"basePath": "/service",
-	"tags": [{
-		"name": "Packages"
-	}, {
-		"name": "PackagesCreateWithDocumentLayout"
-	}, {
-		"name": "PackagesCreateWithDocumentLayoutMultipart"
-	}, {
-		"name": "PackagesCreate"
-	}, {
-		"name": "PackagesCreateWithTemplate"
-	}, {
-		"name": "PackagesCreateMultiPart"
-	}],
 	"schemes": ["https"],
 	"paths": {
 		"/Packages/CreateMultiPart": {
