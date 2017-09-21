@@ -5,10 +5,23 @@
 		"title": "GSA DSS API"
 	},
 	"basePath": "/service",
+	"tags": [{
+		"name": "Packages"
+	}, {
+		"name": "PackagesCreateWithDocumentLayout"
+	}, {
+		"name": "PackagesCreateWithDocumentLayoutMultipart"
+	}, {
+		"name": "PackagesCreate"
+	}, {
+		"name": "PackagesCreateWithTemplate"
+	}, {
+		"name": "PackagesCreateMultiPart"
+	}],
 	"schemes": ["https"],
 	"paths": {
 		"/Packages/CreateMultiPart": {
-			"post": {
+			"get": {
 				"tags": ["Packages"],
 				"summary": "Multipart Upload Package creation",
 				"description": "Create package using multipart file upload",
