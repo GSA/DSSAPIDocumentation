@@ -25,5 +25,6 @@ The current version of the API lives at ```https://api.gsa.gov/operations/signat
 | ```/Packages/CreateWithDocumentLayoutMultipart``` | Creates Package from a document layout using multipart file transfer and returns success or failure response
 | ```/Packages/Create``` | Creates Package and returns success or failure response
 | ```/Packages/CreateMultiPart``` | Creates Package using multipart file transfer and returns success or failure response
+| ```/Packages/CreateWithTemplate``` | Creates a Package from an exisitng template and returns success or failure response
 
 <body id="basics"></body>
