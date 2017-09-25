@@ -24,7 +24,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "Multipart Upload Package creation",
-				"description": "Create package using multipart file upload",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. Document and attachment files can be attached separately and sent as another key value pair.",
 				"operationId": "dssUniversalConnectorMultiPart",
 				"consumes": ["multipart/form-data"],
 				"produces": ["application/json"],
@@ -70,7 +70,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS create Package from layout",
-				"description": "DSS  create Package from layout",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "dssCreatePackageFromDocLayout",
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
@@ -93,7 +93,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS create Package from layout multipart file transfer",
-				"description": "DSS create Package from layout multipart file transfer",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. Document and attachment  files can be attached separately and sent as another key value pair.",
 				"operationId": "dssCreatePackageFromDocLayoutMultipart",
 				"consumes": ["multipart/form-data"],
 				"produces": ["application/json"],
@@ -156,7 +156,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS create Package from template",
-				"description": "DSS create Package from template",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "dssCreatePackageFromTemplate",
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
@@ -179,7 +179,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS Create Package",
-				"description": "DSS Create Package",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "dssUniversalConnector",
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
@@ -203,7 +203,7 @@
 			"get": {
 				"tags": ["Packages"],
 				"summary": "Retrieves a Document from Package",
-				"description": "Retrieves Documents",
+				"description": "This API enables applications to retrieve the signed documents. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "downloadIndividualDocument",
 				"produces": ["application/json"],
 				"parameters": [{
@@ -239,7 +239,7 @@
 			"get": {
 				"tags": ["Packages"],
 				"summary": "Retrieves Package Documents",
-				"description": "Retrieves Package Documents",
+				"description": "This API enables applications to retrieve the signed documents. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "downloadDocuments",
 				"produces": ["application/json"],
 				"parameters": [{
