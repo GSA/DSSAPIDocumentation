@@ -24,6 +24,7 @@ Audit trails: e-SignLive captures all the digital fingerprints that people leave
 **Q: Are e-signatures legal in the U.S.?**
 
 A: Yes. Today, more than 10 years after the passing of the ESIGN Act, there is no longer any question about whether electronic signatures are legal. Federal and state law gives electronic signatures the same legal status as handwritten signatures. Forty-seven states, the District of Columbia, Puerto Rico, and the Virgin Islands have adopted the Uniform Electronic Transactions Act (UETA). Additionally, the Electronic Signatures in Global and National Commerce Act (ESIGN), a federal law, provides that electronic signatures are legally enforceable for intrastate commerce and within those states that have not adopted UETA.
+Per the Electronic Signatures in Global and National Commerce Act, signatures, contracts and other records may not be denied legal effect, validity, or enforceability solely because they are in electronic format. There are no specific prohibition against using electronic signatures for leases - so long as we have an IT solution that can comply with all the requirements for signing them (i.e., initial each page, etc).
 
 **Q: How do I start using DSS for my initiatives?**
 
