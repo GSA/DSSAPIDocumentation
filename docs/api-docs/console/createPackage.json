@@ -225,6 +225,12 @@
 					"description": "Document ID",
 					"required": true,
 					"type": "string"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
 				}],
 				"responses": {
 					"200": {
@@ -253,6 +259,12 @@
 					"name": "orgName",
 					"in": "query",
 					"description": "Package Org Name",
+					"required": true,
+					"type": "string"
+				}, {
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
 					"required": true,
 					"type": "string"
 				}],
