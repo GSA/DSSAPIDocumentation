@@ -208,6 +208,12 @@
 				"operationId": "downloadIndividualDocument",
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"name": "packageId",
 					"in": "query",
 					"description": "Package ID",
@@ -223,12 +229,6 @@
 					"name": "documentId",
 					"in": "query",
 					"description": "Document ID",
-					"required": true,
-					"type": "string"
-				}, {
-					"name": "api_key",
-					"in": "query",
-					"description": "API key for api.gsa.gov",
 					"required": true,
 					"type": "string"
 				}],
@@ -250,6 +250,12 @@
 				"operationId": "downloadDocuments",
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"name": "packageId",
 					"in": "query",
 					"description": "Package ID",
@@ -259,12 +265,6 @@
 					"name": "orgName",
 					"in": "query",
 					"description": "Package Org Name",
-					"required": true,
-					"type": "string"
-				}, {
-					"name": "api_key",
-					"in": "query",
-					"description": "API key for api.gsa.gov",
 					"required": true,
 					"type": "string"
 				}],
