@@ -18,6 +18,7 @@
 	}, {
 		"name": "PackagesCreateMultiPart"
 	}],
+	"host": "api.gsa.gov",
 	"schemes": ["https"],
 	"paths": {
 		"/Packages/CreateMultiPart": {
@@ -199,7 +200,7 @@
 				}
 			}
 		},
-		"/package/Document": {
+		"/Packages/Document": {
 			"get": {
 				"tags": ["Packages"],
 				"summary": "Retrieves a Document from Package",
@@ -235,7 +236,7 @@
 				}
 			}
 		},
-		"/package/retrieve": {
+		"/Packages/Retrieve": {
 			"get": {
 				"tags": ["Packages"],
 				"summary": "Retrieves Package Documents",
