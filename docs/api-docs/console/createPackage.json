@@ -30,6 +30,12 @@
 				"consumes": ["multipart/form-data"],
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"in": "body",
 					"name": "body",
 					"description": "documents multipart attachment",
@@ -76,6 +82,12 @@
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				}, {
 					"in": "body",
 					"name": "body",
 					"required": false,
@@ -99,6 +111,12 @@
 				"consumes": ["multipart/form-data"],
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"in": "body",
 					"name": "body",
 					"required": false,
@@ -162,6 +180,12 @@
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"in": "body",
 					"name": "body",
 					"required": false,
@@ -185,6 +209,12 @@
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
 				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string"
+				},{
 					"in": "body",
 					"name": "body",
 					"description": "JSon Data for DSS create package",
