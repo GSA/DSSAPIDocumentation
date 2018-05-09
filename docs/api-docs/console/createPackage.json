@@ -43,7 +43,7 @@
 					"schema": {
 						"type": "file",
 						"items": {
-							"$ref": "#/definitions/FormDataParam"
+							"$ref": "#/definitions/FormDataContentDisposition"
 						}
 					}
 				}, {
