@@ -36,12 +36,12 @@
 					"required": true,
 					"type": "string"
 				},{
-					"in": "body",
-					"name": "body",
+					"in": "formData",
+					"name": "documents",
 					"description": "documents multipart attachment",
 					"required": true,
 					"schema": {
-						"type": "file",
+						"type": "File",
 						"items": {
 							"$ref": "#/definitions/FormDataParam"
 						}
