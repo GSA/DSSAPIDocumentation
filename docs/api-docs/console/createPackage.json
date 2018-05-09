@@ -41,7 +41,7 @@
 					"description": "documents multipart attachment",
 					"required": true,
 					"schema": {
-						"type": "File",
+						"type": "file",
 						"items": {
 							"$ref": "#/definitions/FormDataParam"
 						}
