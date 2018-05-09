@@ -41,9 +41,9 @@
 					"description": "documents multipart attachment",
 					"required": true,
 					"schema": {
-						"type": "array",
+						"type": "file",
 						"items": {
-							"$ref": "#/definitions/FormDataBodyPart"
+							"$ref": "#/definitions/FormDataParam"
 						}
 					}
 				}, {
