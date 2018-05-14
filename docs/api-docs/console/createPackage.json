@@ -21,6 +21,38 @@
 	"host": "api.gsa.gov",
 	"schemes": ["https"],
 	"paths": {
+		"/dssUniversalConnector": {
+			"post": {
+				"tags": ["Packages"],
+				"summary": "DSS Create Package",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"operationId": "dssUniversalConnector",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+				},{
+					"in": "body",
+					"name": "body",
+					"description": "JSon Data for DSS create package",
+					"required": true,
+					"schema": {
+						"type": "string",
+						"$ref": "createPackageExample.json"
+					}
+				}],
+				"responses": {
+					"default": {
+						"description": "successful operation"
+					}
+				}
+			}
+		},
 		"/Packages/CreateMultiPart": {
 			"post": {
 				"tags": ["Packages"],
@@ -189,36 +221,6 @@
 					"in": "body",
 					"name": "body",
 					"required": false,
-					"schema": {
-						"type": "string"
-					}
-				}],
-				"responses": {
-					"default": {
-						"description": "successful operation"
-					}
-				}
-			}
-		},
-		"/dssUniversalConnector": {
-			"post": {
-				"tags": ["Packages"],
-				"summary": "DSS Create Package",
-				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
-				"operationId": "dssUniversalConnector",
-				"consumes": ["application/json"],
-				"produces": ["application/json"],
-				"parameters": [{
-					"name": "api_key",
-					"in": "query",
-					"description": "API key for api.gsa.gov",
-					"required": true,
-					"type": "string"
-				},{
-					"in": "body",
-					"name": "body",
-					"description": "JSon Data for DSS create package",
-					"required": true,
 					"schema": {
 						"type": "string"
 					}
