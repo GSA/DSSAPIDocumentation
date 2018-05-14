@@ -42,7 +42,7 @@
 					"description": "JSon Data for DSS create package",
 					"required": true,
 					"default": {
-						"$ref": "DSSAPIDocumentation/docs/api-docs/console/createPackageExample.json"
+						"$ref": "https://gsa.github.io/open.gsa.gov/createPackageExample.json"
 					},
 					"schema": {
 						"type": "string",
