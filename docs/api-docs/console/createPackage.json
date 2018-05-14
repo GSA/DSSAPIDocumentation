@@ -43,7 +43,7 @@
 					"required": true,
 					"schema": {
 						"type": "string",
-						"$ref": "createPackageExample.json"
+						"$ref": "DSSAPIDocumentation/docs/api-docs/console/createPackageExample.json"
 					}
 				}],
 				"responses": {
