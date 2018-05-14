@@ -41,6 +41,7 @@
 					"name": "body",
 					"description": "JSon Data for DSS create package",
 					"required": true,
+					"$ref": "DSSAPIDocumentation/docs/api-docs/console/createPackageExample.json"
 					"schema": {
 						"type": "string",
 						"$ref": "DSSAPIDocumentation/docs/api-docs/console/createPackageExample.json"
