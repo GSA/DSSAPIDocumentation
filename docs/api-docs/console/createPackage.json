@@ -33,14 +33,14 @@
 					"name": "api_key",
 					"in": "query",
 					"description": "API key for api.gsa.gov",
-					"required": true,
+					"required": false,
 					"type": "string",
 					"default": "DEMO_KEY"
 				},{
 					"in": "body",
 					"name": "body",
 					"description": "JSon Data for DSS create package",
-					"required": true,
+					"required": false,
 					"default": {
 						"$ref": "https://gsa.github.io/open.gsa.gov/createPackageExample.json"
 					},
