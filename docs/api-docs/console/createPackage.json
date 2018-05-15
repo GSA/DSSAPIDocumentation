@@ -33,24 +33,27 @@
 					"name": "api_key",
 					"in": "query",
 					"description": "API key for api.gsa.gov",
-					"required": false,
+					"required": true,
 					"type": "string",
+					"format": "string",
 					"default": "DEMO_KEY"
 				},{
-					"in": "body",
 					"name": "body",
-					"description": "JSon Data for DSS create package",
-					"required": true
+					"in": "body",
+					"description": "JSON Data for DSS create package",
+					"required": true,
+					"type": "string",
+					"format": "string"
 				}],
 				"responses": {
 					"default": {
-						"description": "successful operation"
+						"description": "Successful operation"
 					},
-					"403": {
-						"description": "error operation"
+					"551": {
+						"description": "Validation Error. OrgName provided does not match the package org name."
 					},
-					"405": {
-						"description": "invalid operation"
+					"552": {
+						"description": "Validation Error. Package exist in EDMS."
 					}
 				}
 			}
