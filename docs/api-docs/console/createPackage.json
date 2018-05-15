@@ -45,33 +45,14 @@
 				"responses": {
 					"default": {
 						"description": "successful operation"
+					},
+					"403": {
+						"description": "error operation"
+					},
+					"405": {
+						"description": "invalid operation"
 					}
-				},
-				"responseMessages": [{
-				"code": "200",
-				"message": "Ok",
-				"responseModel": "registrationType"
-			},
-			{
-				"code": "403",
-				"message": "Request for IGT only registration data is forbidden"
-			},
-			{
-				"code": "403",
-				"message": "Request for non-public registration data is forbidden"
-			},
-			{
-				"code": "404",
-				"message": "The registration could not be found"
-			},
-			{
-				"code": "406",
-				"message": "Duns number must be 13 digit long"
-			},
-			{
-				"code": "500",
-				"message": "Internal error"
-			}]
+				}
 			}
 		},
 		"/Packages/CreateMultiPart": {
