@@ -40,8 +40,7 @@
 					"in": "body",
 					"name": "body",
 					"description": "JSon Data for DSS create package",
-					"required": false,
-					"default":  "Example JSon from the link provided above."	
+					"required": true
 				}],
 				"responses": {
 					"default": {
