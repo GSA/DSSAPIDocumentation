@@ -21,7 +21,7 @@
 	"host": "api.gsa.gov",
 	"schemes": ["https"],
 	"paths": {
-		"/dssUniversalConnector": {
+		"/Packages/Create": {
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS Create Package",
