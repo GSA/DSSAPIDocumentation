@@ -54,7 +54,109 @@
 					},
 					"552": {
 						"description": "Validation Error. Package exist in EDMS."
-					}
+					},
+      
+    "553": {"description": "Validation Error. Please enter a valid Pagcake ID and Org Name"
+      },
+    "404": {"description": "Resource not found..  Please check the URL or the Package ID"
+      },
+    "500": {
+        "description": "System Error. There was a system error. Please contact DSS team."
+      },
+    
+    "401": {
+        "description": "Authorization Error. There was a system error. Please contact DSS team."
+      },
+    "400": {
+        "description": "System Error. There was a system error. Please contact DSS team."
+      },
+    "550": {
+        "description": "Validation Error. Organization Name not provided or is empty."
+      },
+     "540": {
+        "description": "Validation Error. Package Name not provided or is empty."
+      },
+      "541": {
+        "description": "Validation Error. Sender email not provided or is empty."
+      },
+      "542": {
+        "description": "Validation Error. Sender email address not provided or is invalid."
+      },
+      "543": {
+        "description": "Validation Error. Package Option not provided or is empty. Valid values are ‘Create’ or ‘CreateSend’."
+      },
+      "544": {
+        "description": "Validation Error. Document Name not provided or is empty."
+      },
+      "545": {
+        "description": "Validation Error. Document Content not provide or is empty. The API accepts Document Content as base64Encoded String."
+      },
+      "546": {
+        "description": "Validation Error. Signer email not provided or is empty."
+      },
+      "547": {
+        "description": "Validation Error. Signer email not provided or is invalid."
+      },
+      "548": {
+        "description": "Validation Error. Signer First Name not provided or is empty."
+      },
+       "549": {
+        "description": "Validation Error. Signer Last Name not provided or is empty."
+      },
+      "561": {
+        "description": "Validation Error. Search text not provided or is empty."
+      },
+      "562": {
+        "description": "Validation Error. Document Name is invalid. The API accepts .pdf documents only."
+      },
+      "563": {
+        "description": "Validation Error. Template Id not provided or is empty."
+      },
+      "564": {
+        "description": "Validation Error. Number of signers provided do not match the number of signature placeholders in the template."
+      },
+      "565": {
+        "description": "Validation Error. Document layout name not provided or is empty."
+      },
+      "566": {
+        "description": "Validation Error. Document layout name provided is incorrect."
+      },
+      "567": {
+        "description": "Validation Error. File could not be decoded."
+      },
+      "568": {
+        "description": "Validation Error. Number of placeholders is more than number of signers."
+      },
+      "569": {
+        "description": "Validation Error. Placeholder name provided does not exists or is invalid."
+      },
+      "570": {
+        "description": "Validation Error. Placeholder name not provided or is empty."
+      },
+      "571": {
+        "description": "Validation Error. Package Option not provided or is empty. Valid values are ‘Archive’ or ‘Delete’."
+      },
+      "572": {
+        "description": "Validation Error. Package Id not provided or is empty."
+      },
+      "573": {
+        "description": "Validation Error. Package name already in use. Please change the package name."
+      },
+      "574": {
+        "description": "Validation Error. New user TYPE not provided or is empty"
+      },
+       "575": {
+        "description": "Validation Error. New User Last Name not provided or is empty."
+      },
+      "576": {
+        "description": "Validation Error. New User First Name not provided or is empty."
+      },
+      "577": {
+        "description": "Validation Error. The specified queue does not exists."
+      },
+      "578": {
+        "description": "Validation Error. The specified queue has no messages."
+      }
 				}
 			}
 		},
