@@ -25,7 +25,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS Create Package",
-				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. https://gsa.github.io/DSSAPIDocumentation/api-docs/console/createPackageExample.json",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. You can use the example JSon from https://gsa.github.io/DSSAPIDocumentation/api-docs/console/createPackageExample.json as input body payload.",
 				"operationId": "dssUniversalConnector",
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
@@ -41,11 +41,7 @@
 					"name": "body",
 					"description": "JSon Data for DSS create package",
 					"required": false,
-					"default":  "Example JSon to be inserted",
-					"schema": {
-						"type": "string",
-						"$ref": "DSSAPIDocumentation/docs/api-docs/console/createPackageExample.json"
-					}
+					"default":  "Example JSon from the link provided above."	
 				}],
 				"responses": {
 					"default": {
