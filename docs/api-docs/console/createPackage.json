@@ -25,7 +25,7 @@
 			"post": {
 				"tags": ["Packages"],
 				"summary": "DSS Create Package",
-				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. http://www.google.com",
 				"operationId": "dssUniversalConnector",
 				"consumes": ["application/json"],
 				"produces": ["application/json"],
