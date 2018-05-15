@@ -1,7 +1,7 @@
  {
- 	"orgName": "FLEET",
- 	"senderEmail": "sudhangi.suthrave@gsa.gov",
- 	"packageName": "RetaDemo3",
+ 	"orgName": "GSA",
+ 	"senderEmail": "dsstest@gsa.gov",
+ 	"packageName": "Test_DSSDocTrialUser1",
  	"enableSigningOrder": true,
  	"packageOption": "create",
  	"documents": [{
