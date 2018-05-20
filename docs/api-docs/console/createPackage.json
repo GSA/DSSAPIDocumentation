@@ -45,7 +45,7 @@
 					"type": "string",
 					"format": "string"
 				}],
-				"responses" : "All the Errors and Messages have been listed at: https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html."
+				"responses" : "All the Errors and Messages have been listed at: https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html.",
 				"responses": {
 					"default": {
 						"description": "Successful operation"
