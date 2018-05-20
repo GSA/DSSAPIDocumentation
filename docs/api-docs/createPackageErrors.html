@@ -30,105 +30,105 @@ nav: fields
 
 <tr>
 	<td>
-		<code>orgName</code>
+		<code>551</code>
 		</td>
-	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
-	<td>string</td>
+	<td>OrgName provided does not match the package org name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageName</code>
+		<code>552</code>
 		</td>
-	<td>User defined name for the package. The API supports max size of 64 characters.</td>
-	<td>string</td>
+	<td>Package exist in EDMS.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>senderEmail</code>
+		<code>553</code>
 		</td>
-	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Please enter a valid Pagcake ID and Org Name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageOption</code>
+		<code>550</code>
 		</td>
-	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
-	<td>string</td>
+	<td>Organization Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>packageDescription</code>
+		<code>540</code>
 		</td>
-	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
-	<td>string</td>
+	<td>Package Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>templateId</code>
+		<code>541</code>
 		</td>
-	<td>This is unique Id of the template from which the package is created.</td>
-	<td>string</td>
+	<td>Sender email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>Signers</code>
+		<code>542</code>
 		</td>
-	<td>The API provides ability to include multiple signers for a given document.</td>
-	<td>string</td>
+	<td>Sender email address not provided or is invalid.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerEmail</code>
+		<code>543</code>
 		</td>
-	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
-	<td>string</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Create’ or ‘CreateSend’.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerFirstName</code>
+		<code>544</code>
 		</td>
-	<td>Signer’s first name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Document Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerLastName</code>
+		<code>545</code>
 		</td>
-	<td>Signer’s last name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Document Content not provide or is empty. The API accepts Document Content as base64Encoded String.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>placeHolder</code>
+		<code>546</code>
 		</td>
-	<td>This is the name of the signer placeholder in the template.</td>
-	<td>string</td>
+	<td>Signer email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>noteToSigner</code>
+		<code>547</code>
 		</td>
-	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
-	<td>string</td>
+	<td>Signer email not provided or is invalid.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>enableSigningOrder</code>
+		<code>548</code>
 		</td>
-	<td>In scenarios where there are more than one Signers, a value of ‘true’ will indicate that the Signers sign the documents sequentially. The default value is ‘false’ and indicates that the Signers sign the documents in parallel.</td>
-	<td>string</td>
+	<td>Signer First Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>Attachments</code>
+		<code>549</code>
 		</td>
-	<td>The API provides ability to attach multiple attachments which do not require signatures on them.</td>
-	<td>string</td>
+	<td>Signer Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
