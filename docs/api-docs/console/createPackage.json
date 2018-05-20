@@ -45,7 +45,10 @@
 					"type": "string",
 					"format": "string"
 				}],
-				"responses": "All the Errors and Messages have been listed at: https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html."
+				"externalDocs" : {
+  					"description": "Find more info here",
+  					"url": "https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html ."
+				}
 			}
 		},
 		"/Packages/CreateMultiPart": {
