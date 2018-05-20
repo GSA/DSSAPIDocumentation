@@ -1,0 +1,553 @@
+---
+layout: default
+title: Create Package Errors
+nav: fields 
+---
+
+<h3>List of Success and Error MesssagesField for the CreatePackage API </h3>
+
+<p>The messages below are returned in the Crete Package API.</p> 
+
+
+<h5>Create Package API Messages</h5>
+
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Error Code</th>
+<th>Description</th>
+<th>Error Type</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageName</code>
+		</td>
+	<td>User defined name for the package. The API supports max size of 64 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>senderEmail</code>
+		</td>
+	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageOption</code>
+		</td>
+	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>packageDescription</code>
+		</td>
+	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>templateId</code>
+		</td>
+	<td>This is unique Id of the template from which the package is created.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>Signers</code>
+		</td>
+	<td>The API provides ability to include multiple signers for a given document.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerEmail</code>
+		</td>
+	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerFirstName</code>
+		</td>
+	<td>Signer’s first name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerLastName</code>
+		</td>
+	<td>Signer’s last name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>placeHolder</code>
+		</td>
+	<td>This is the name of the signer placeholder in the template.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>noteToSigner</code>
+		</td>
+	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>enableSigningOrder</code>
+		</td>
+	<td>In scenarios where there are more than one Signers, a value of ‘true’ will indicate that the Signers sign the documents sequentially. The default value is ‘false’ and indicates that the Signers sign the documents in parallel.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>Attachments</code>
+		</td>
+	<td>The API provides ability to attach multiple attachments which do not require signatures on them.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>attachmentName</code>
+		</td>
+	<td>Name of the attachment to be used. The API supports pdf documents only.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>attachmentContent</code>
+		</td>
+	<td>The actual attachment is included as base64Encoded string. The API support max. file size of 10mb.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>Documents</code>
+		</td>
+	<td>The API provides ability to attach multiple documents and provide signer information for each of the documents.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>documentName</code>
+		</td>
+	<td>Name of the document to be used for the signing ceremony. The API supports pdf documents only.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>documentContent</code>
+		</td>
+	<td>The actual document is included as base64Encoded string. The API support max. file size of 10mb.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>layoutName</code>
+		</td>
+	<td>Name of the the layout that is applied to the document.</td>
+	<td>string</td>
+	</tr>
+
+
+</tbody>
+</table>
+
+
+<h5>Create Package From Template API Fields</h5>
+
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+<th>Data type</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageName</code>
+		</td>
+	<td>User defined name for the package. The API supports max size of 64 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>senderEmail</code>
+		</td>
+	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageOption</code>
+		</td>
+	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>packageDescription</code>
+		</td>
+	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>templateId</code>
+		</td>
+	<td>This is unique Id of the template from which the package is created.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>Signers</code>
+		</td>
+	<td>The API provides ability to include multiple signers for a given document.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerEmail</code>
+		</td>
+	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerFirstName</code>
+		</td>
+	<td>Signer’s first name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerLastName</code>
+		</td>
+	<td>Signer’s last name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>placeHolder</code>
+		</td>
+	<td>This is the name of the signer placeholder in the template.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>noteToSigner</code>
+		</td>
+	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
+	<td>string</td>
+	</tr>
+
+</tbody>
+</table>
+
+<h5>Create Package from Document Layout API Fields</h5>
+
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+<th>Data type</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageName</code>
+		</td>
+	<td>User defined name for the package. The API supports max size of 64 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>senderEmail</code>
+		</td>
+	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageOption</code>
+		</td>
+	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>packageDescription</code>
+		</td>
+	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>Signers</code>
+		</td>
+	<td>The API provides ability to include multiple signers for a given document.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerEmail</code>
+		</td>
+	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerFirstName</code>
+		</td>
+	<td>Signer’s first name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>signerLastName</code>
+		</td>
+	<td>Signer’s last name. The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>placeHolder</code>
+		</td>
+	<td>This is the name of the signer placeholder in the template.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>noteToSigner</code>
+		</td>
+	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
+	<td>string</td>
+	</tr>
+<tr>
+	<td>
+		<code>enableSigningOrder</code>
+		</td>
+	<td>In scenarios where there are more than one Signers, a value of ‘true’ will indicate that the Signers sign the documents sequentially. The default value is ‘false’ and indicates that the Signers sign the documents in parallel.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>Attachments</code>
+		</td>
+	<td>The API provides ability to attach multiple attachments which do not require signatures on them.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>attachmentName</code>
+		</td>
+	<td>Name of the attachment to be used. The API supports pdf documents only.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>attachmentContent</code>
+		</td>
+	<td>The actual attachment is included as base64Encoded string. The API support max. file size of 10mb.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>Documents</code>
+		</td>
+	<td>The API provides ability to attach multiple documents and provide signer information for each of the documents.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>documentName</code>
+		</td>
+	<td>Name of the document to be used for the signing ceremony. The API supports pdf documents only.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>documentContent</code>
+		</td>
+	<td>The actual document is included as base64Encoded string. The API support max. file size of 10mb.</td>
+	<td>string</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>layoutName</code>
+		</td>
+	<td>Name of the the layout that is applied to the document.</td>
+	<td>string</td>
+	</tr>
+
+</tbody>
+</table>
+
+<h5>Retrieve Package Documents in Zipped Format API Fields</h5>
+
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+<th>Data type</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageId</code>
+		</td>
+	<td>Unique identifier for the package to be retrieved. (The packageId is available as a response to the CreatePackage API call.</td>
+	<td>string</td>
+	</tr>
+
+</tbody>
+</table>
+
+<h5>Retrieve Individual Package Document</h5>
+
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+<th>Data type</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>packageId</code>
+		</td>
+	<td>Unique identifier for the package to be retrieved. (The packageId is available as a response to the CreatePackage API call.</td>
+	<td>string</td>
+	</tr>
+	
+<tr>
+	<td>
+		<code>documentId</code>
+		</td>
+	<td>Unique identifier for the document to be retrieved. (The documentId is available as a response to the CreatePackage API call.</td>
+	<td>string</td>
+	</tr>
+
+</tbody>
+</table>
+
+<body id="fields">
+</body>
