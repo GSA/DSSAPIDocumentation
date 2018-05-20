@@ -133,55 +133,154 @@ nav: fields
 
 <tr>
 	<td>
-		<code>attachmentName</code>
+		<code>561</code>
 		</td>
-	<td>Name of the attachment to be used. The API supports pdf documents only.</td>
-	<td>string</td>
+	<td>Search text not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 
 <tr>
 	<td>
-		<code>attachmentContent</code>
+		<code>562</code>
 		</td>
-	<td>The actual attachment is included as base64Encoded string. The API support max. file size of 10mb.</td>
-	<td>string</td>
+	<td>Document Name is invalid. The API accepts .pdf documents only.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>Documents</code>
+		<code>563</code>
 		</td>
-	<td>The API provides ability to attach multiple documents and provide signer information for each of the documents.</td>
-	<td>string</td>
+	<td>Template Id not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>documentName</code>
+		<code>564</code>
 		</td>
-	<td>Name of the document to be used for the signing ceremony. The API supports pdf documents only.</td>
-	<td>string</td>
+	<td>Number of signers provided do not match the number of signature placeholders in the template.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>documentContent</code>
+		<code>565</code>
 		</td>
-	<td>The actual document is included as base64Encoded string. The API support max. file size of 10mb.</td>
-	<td>string</td>
+	<td>Document layout name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 
 <tr>
 	<td>
-		<code>layoutName</code>
+		<code>566</code>
 		</td>
-	<td>Name of the the layout that is applied to the document.</td>
-	<td>string</td>
+	<td>Document layout name provided is incorrect.</td>
+	<td>Validation Error</td>
 	</tr>
 
-
+<tr>
+	<td>
+		<code>567</code>
+		</td>
+	<td>File could not be decoded.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>568</code>
+		</td>
+	<td>Number of placeholders is more than number of signers.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>569</code>
+		</td>
+	<td>Placeholder name provided does not exists or is invalid.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>570</code>
+		</td>
+	<td>Placeholder name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>571</code>
+		</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Archive’ or ‘Delete’.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>572</code>
+		</td>
+	<td>Package Id not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>573</code>
+		</td>
+	<td>Package name already in use. Please change the package name.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>574</code>
+		</td>
+	<td>New user TYPE not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>575</code>
+		</td>
+	<td>New User Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>576</code>
+		</td>
+	<td>New User First Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>577</code>
+		</td>
+	<td>The specified queue does not exists.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>578</code>
+		</td>
+	<td>The specified queue has no messages.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
 </tbody>
 </table>
 
