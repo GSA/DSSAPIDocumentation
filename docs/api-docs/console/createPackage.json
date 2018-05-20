@@ -44,11 +44,7 @@
 					"required": true,
 					"type": "string",
 					"format": "string"
-				}],
-				"externalDocs" : {
-  					"description": "Find more info here",
-  					"url": "https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html ."
-				}
+				}]
 			}
 		},
 		"/Packages/CreateMultiPart": {
