@@ -32,7 +32,7 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key for api.gsa.gov",
+					"description": "API key",
 					"required": true,
 					"type": "string",
 					"format": "string",
@@ -40,10 +40,61 @@
 				}, {
 					"name": "body",
 					"in": "body",
-					"description": "JSON Data for DSS create package",
+					"description": "JSON Data",
 					"required": true,
 					"type": "string",
 					"format": "string"
+				}]
+			}
+		},
+		"/Packages/CreateWithDocumentLayout": {
+			"post": {
+				"tags": ["Packages"],
+				"summary": "DSS create Package from layout",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. You can use the example JSON from here as input body payload: \n https://gsa.github.io/DSSAPIDocumentation/api-docs/console/createPackageDocLayoutExample.json \n \n \n To find more info about the various errors and messages in DSS API's, read: \n https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html",
+				"operationId": "dssCreatePackageFromDocLayout",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+
+				}, {
+					"in": "body",
+					"name": "body",
+					"description": "JSON Data",
+					"required": true,
+					"type": "string"
+				}]
+			}
+		},
+		"/Packages/CreateWithTemplate": {
+			"post": {
+				"tags": ["Packages"],
+				"summary": "DSS create Package from template",
+				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format. You can use the example JSON from here as input body payload: \n https://gsa.github.io/DSSAPIDocumentation/api-docs/console/createPackageTemplateExample.json \n \n \n To find more info about the various errors and messages in DSS API's, read: \n https://gsa.github.io/DSSAPIDocumentation/api-docs/createPackageErrors.html",
+				"operationId": "dssCreatePackageFromTemplate",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+
+				}, {
+					"in": "body",
+					"name": "body",
+					"required": false,
+					"type": "string",
+					"description": "JSON Data"
+
 				}]
 			}
 		},
@@ -88,35 +139,6 @@
 					"name": "body",
 					"description": "Json Body",
 					"required": true,
-					"schema": {
-						"type": "string"
-					}
-				}],
-				"responses": {
-					"default": {
-						"description": "successful operation"
-					}
-				}
-			}
-		},
-		"/Packages/CreateWithDocumentLayout": {
-			"post": {
-				"tags": ["Packages"],
-				"summary": "DSS create Package from layout",
-				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
-				"operationId": "dssCreatePackageFromDocLayout",
-				"consumes": ["application/json"],
-				"produces": ["application/json"],
-				"parameters": [{
-					"name": "api_key",
-					"in": "query",
-					"description": "API key for api.gsa.gov",
-					"required": true,
-					"type": "string"
-				}, {
-					"in": "body",
-					"name": "body",
-					"required": false,
 					"schema": {
 						"type": "string"
 					}
@@ -197,35 +219,7 @@
 				}
 			}
 		},
-		"/Packages/CreateWithTemplate": {
-			"post": {
-				"tags": ["Packages"],
-				"summary": "DSS create Package from template",
-				"description": "This API enables applications to initiate the digital signature signing ceremony. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
-				"operationId": "dssCreatePackageFromTemplate",
-				"consumes": ["application/json"],
-				"produces": ["application/json"],
-				"parameters": [{
-					"name": "api_key",
-					"in": "query",
-					"description": "API key for api.gsa.gov",
-					"required": true,
-					"type": "string"
-				}, {
-					"in": "body",
-					"name": "body",
-					"required": false,
-					"schema": {
-						"type": "string"
-					}
-				}],
-				"responses": {
-					"default": {
-						"description": "successful operation"
-					}
-				}
-			}
-		},
+		
 		"/Packages/Document": {
 			"get": {
 				"tags": ["Packages"],
