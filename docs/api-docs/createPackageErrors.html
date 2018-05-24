@@ -304,9 +304,9 @@ nav: fields
 	</colgroup>
 <thead>
 <tr>
-<th>Field name</th>
+<th>Message Code</th>
 <th>Description</th>
-<th>Data type</th>
+<th>Message Type</th>
 
 </tr>
 </thead>
@@ -314,90 +314,262 @@ nav: fields
 
 <tr>
 	<td>
-		<code>orgName</code>
+		<code>200</code>
 		</td>
-	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
-	<td>string</td>
+	<td>Success</td>
+	<td>Success Message</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>551</code>
+		</td>
+	<td>OrgName provided does not match the package org name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageName</code>
+		<code>552</code>
 		</td>
-	<td>User defined name for the package. The API supports max size of 64 characters.</td>
-	<td>string</td>
+	<td>Package exist in EDMS.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>senderEmail</code>
+		<code>553</code>
 		</td>
-	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Please enter a valid Pagcake ID and Org Name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageOption</code>
+		<code>550</code>
 		</td>
-	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
-	<td>string</td>
+	<td>Organization Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>packageDescription</code>
+		<code>540</code>
 		</td>
-	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
-	<td>string</td>
+	<td>Package Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>templateId</code>
+		<code>541</code>
 		</td>
-	<td>This is unique Id of the template from which the package is created.</td>
-	<td>string</td>
+	<td>Sender email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>Signers</code>
+		<code>542</code>
 		</td>
-	<td>The API provides ability to include multiple signers for a given document.</td>
-	<td>string</td>
+	<td>Sender email address not provided or is invalid.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerEmail</code>
+		<code>543</code>
 		</td>
-	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
-	<td>string</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Create’ or ‘CreateSend’.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerFirstName</code>
+		<code>544</code>
 		</td>
-	<td>Signer’s first name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Document Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerLastName</code>
+		<code>545</code>
 		</td>
-	<td>Signer’s last name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Document Content not provide or is empty. The API accepts Document Content as base64Encoded String.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>placeHolder</code>
+		<code>546</code>
 		</td>
-	<td>This is the name of the signer placeholder in the template.</td>
-	<td>string</td>
+	<td>Signer email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>noteToSigner</code>
+		<code>547</code>
 		</td>
-	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
-	<td>string</td>
+	<td>Signer email not provided or is invalid.</td>
+	<td>Validation Error</td>
+	</tr>
+<tr>
+	<td>
+		<code>548</code>
+		</td>
+	<td>Signer First Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>549</code>
+		</td>
+	<td>Signer Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>561</code>
+		</td>
+	<td>Search text not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>562</code>
+		</td>
+	<td>Document Name is invalid. The API accepts .pdf documents only.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>563</code>
+		</td>
+	<td>Template Id not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>564</code>
+		</td>
+	<td>Number of signers provided do not match the number of signature placeholders in the template.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>565</code>
+		</td>
+	<td>Document layout name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>566</code>
+		</td>
+	<td>Document layout name provided is incorrect.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>567</code>
+		</td>
+	<td>File could not be decoded.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>568</code>
+		</td>
+	<td>Number of placeholders is more than number of signers.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>569</code>
+		</td>
+	<td>Placeholder name provided does not exists or is invalid.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>570</code>
+		</td>
+	<td>Placeholder name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>571</code>
+		</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Archive’ or ‘Delete’.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>572</code>
+		</td>
+	<td>Package Id not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>573</code>
+		</td>
+	<td>Package name already in use. Please change the package name.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>574</code>
+		</td>
+	<td>New user TYPE not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>575</code>
+		</td>
+	<td>New User Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>576</code>
+		</td>
+	<td>New User First Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>577</code>
+		</td>
+	<td>The specified queue does not exists.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>578</code>
+		</td>
+	<td>The specified queue has no messages.</td>
+	<td>Validation Error</td>
 	</tr>
 
 </tbody>
@@ -414,159 +586,271 @@ nav: fields
 	</colgroup>
 <thead>
 <tr>
-<th>Field name</th>
+<th>Message Code</th>
 <th>Description</th>
-<th>Data type</th>
+<th>Message Type</th>
 
 </tr>
 </thead>
 <tbody>
-
 <tr>
 	<td>
-		<code>orgName</code>
+		<code>200</code>
 		</td>
-	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
-	<td>string</td>
+	<td>Success</td>
+	<td>Success Message</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>551</code>
+		</td>
+	<td>OrgName provided does not match the package org name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageName</code>
+		<code>552</code>
 		</td>
-	<td>User defined name for the package. The API supports max size of 64 characters.</td>
-	<td>string</td>
+	<td>Package exist in EDMS.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>senderEmail</code>
+		<code>553</code>
 		</td>
-	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Please enter a valid Pagcake ID and Org Name.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>packageOption</code>
+		<code>550</code>
 		</td>
-	<td>A value of ‘create’ indicates that the package is created in draft mode. A value of ‘createSend’ indicates that the package is created and sent for signing to the senders.</td>
-	<td>string</td>
+	<td>Organization Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>packageDescription</code>
+		<code>540</code>
 		</td>
-	<td>This enables the user to provide brief details about the package being created. The API supports max size of 256 characters.</td>
-	<td>string</td>
-	</tr>
-
-<tr>
-	<td>
-		<code>Signers</code>
-		</td>
-	<td>The API provides ability to include multiple signers for a given document.</td>
-	<td>string</td>
+	<td>Package Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerEmail</code>
+		<code>541</code>
 		</td>
-	<td>Email address of the signer.  The API supports max size of 256 characters.</td>
-	<td>string</td>
+	<td>Sender email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerFirstName</code>
+		<code>542</code>
 		</td>
-	<td>Signer’s first name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Sender email address not provided or is invalid.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>signerLastName</code>
+		<code>543</code>
 		</td>
-	<td>Signer’s last name. The API supports max size of 100 characters.</td>
-	<td>string</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Create’ or ‘CreateSend’.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>placeHolder</code>
+		<code>544</code>
 		</td>
-	<td>This is the name of the signer placeholder in the template.</td>
-	<td>string</td>
+	<td>Document Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>noteToSigner</code>
+		<code>545</code>
 		</td>
-	<td>For each signer, this field enables the Sender of the package to provide messages custom to the Signer(s). The API supports max size of 2048 characters.</td>
-	<td>string</td>
+	<td>Document Content not provide or is empty. The API accepts Document Content as base64Encoded String.</td>
+	<td>Validation Error</td>
 	</tr>
 <tr>
 	<td>
-		<code>enableSigningOrder</code>
+		<code>546</code>
 		</td>
-	<td>In scenarios where there are more than one Signers, a value of ‘true’ will indicate that the Signers sign the documents sequentially. The default value is ‘false’ and indicates that the Signers sign the documents in parallel.</td>
-	<td>string</td>
+	<td>Signer email not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
-
 <tr>
 	<td>
-		<code>Attachments</code>
+		<code>547</code>
 		</td>
-	<td>The API provides ability to attach multiple attachments which do not require signatures on them.</td>
-	<td>string</td>
+	<td>Signer email not provided or is invalid.</td>
+	<td>Validation Error</td>
+	</tr>
+<tr>
+	<td>
+		<code>548</code>
+		</td>
+	<td>Signer First Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>attachmentName</code>
+		<code>549</code>
 		</td>
-	<td>Name of the attachment to be used. The API supports pdf documents only.</td>
-	<td>string</td>
-	</tr>
-
-
-<tr>
-	<td>
-		<code>attachmentContent</code>
-		</td>
-	<td>The actual attachment is included as base64Encoded string. The API support max. file size of 10mb.</td>
-	<td>string</td>
+	<td>Signer Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 <tr>
 	<td>
-		<code>Documents</code>
+		<code>561</code>
 		</td>
-	<td>The API provides ability to attach multiple documents and provide signer information for each of the documents.</td>
-	<td>string</td>
-	</tr>
-
-<tr>
-	<td>
-		<code>documentName</code>
-		</td>
-	<td>Name of the document to be used for the signing ceremony. The API supports pdf documents only.</td>
-	<td>string</td>
-	</tr>
-
-<tr>
-	<td>
-		<code>documentContent</code>
-		</td>
-	<td>The actual document is included as base64Encoded string. The API support max. file size of 10mb.</td>
-	<td>string</td>
+	<td>Search text not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 
 <tr>
 	<td>
-		<code>layoutName</code>
+		<code>562</code>
 		</td>
-	<td>Name of the the layout that is applied to the document.</td>
-	<td>string</td>
+	<td>Document Name is invalid. The API accepts .pdf documents only.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>563</code>
+		</td>
+	<td>Template Id not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>564</code>
+		</td>
+	<td>Number of signers provided do not match the number of signature placeholders in the template.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>565</code>
+		</td>
+	<td>Document layout name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+
+
+<tr>
+	<td>
+		<code>566</code>
+		</td>
+	<td>Document layout name provided is incorrect.</td>
+	<td>Validation Error</td>
+	</tr>
+
+<tr>
+	<td>
+		<code>567</code>
+		</td>
+	<td>File could not be decoded.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>568</code>
+		</td>
+	<td>Number of placeholders is more than number of signers.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>569</code>
+		</td>
+	<td>Placeholder name provided does not exists or is invalid.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>570</code>
+		</td>
+	<td>Placeholder name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>571</code>
+		</td>
+	<td>Package Option not provided or is empty. Valid values are ‘Archive’ or ‘Delete’.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>572</code>
+		</td>
+	<td>Package Id not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>573</code>
+		</td>
+	<td>Package name already in use. Please change the package name.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>574</code>
+		</td>
+	<td>New user TYPE not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>575</code>
+		</td>
+	<td>New User Last Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>576</code>
+		</td>
+	<td>New User First Name not provided or is empty.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	<tr>
+	<td>
+		<code>577</code>
+		</td>
+	<td>The specified queue does not exists.</td>
+	<td>Validation Error</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+		<code>578</code>
+		</td>
+	<td>The specified queue has no messages.</td>
+	<td>Validation Error</td>
 	</tr>
 
 </tbody>
