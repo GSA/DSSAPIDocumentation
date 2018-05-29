@@ -108,7 +108,7 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key for api.gsa.gov",
+					"description": "API key",
 					"required": true,
 					"type": "string",
 					"default": "DEMO_KEY"
@@ -158,7 +158,7 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key for api.gsa.gov",
+					"description": "API key",
 					"required": true,
 					"type": "string",
 					"default": "DEMO_KEY"
