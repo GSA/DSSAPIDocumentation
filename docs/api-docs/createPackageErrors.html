@@ -672,28 +672,34 @@ nav: fields
 	</colgroup>
 <thead>
 <tr>
-<th>Field name</th>
+<th>Message Code</th>
 <th>Description</th>
-<th>Data type</th>
+<th>Message Type</th>
 
 </tr>
 </thead>
 <tbody>
-
 <tr>
 	<td>
-		<code>orgName</code>
+		<code>200</code>
 		</td>
-	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
-	<td>string</td>
+	<td>Success</td>
+	<td>Success Message</td>
 	</tr>
-
-<tr>
+	
+	<tr>
 	<td>
-		<code>packageId</code>
+		<code>551</code>
 		</td>
-	<td>Unique identifier for the package to be retrieved. (The packageId is available as a response to the CreatePackage API call.</td>
-	<td>string</td>
+	<td>OrgName provided does not match the package org name.</td>
+	<td>Validation Error</td>
+	</tr>
+	<tr>
+	<td>
+		<code>572</code>
+		</td>
+	<td>Package Id not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 </tbody>
@@ -710,9 +716,9 @@ nav: fields
 	</colgroup>
 <thead>
 <tr>
-<th>Field name</th>
+<th>Message Code</th>
 <th>Description</th>
-<th>Data type</th>
+<th>Message Type</th>
 
 </tr>
 </thead>
@@ -720,26 +726,25 @@ nav: fields
 
 <tr>
 	<td>
-		<code>orgName</code>
+		<code>200</code>
 		</td>
-	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
-	<td>string</td>
-	</tr>
-
-<tr>
-	<td>
-		<code>packageId</code>
-		</td>
-	<td>Unique identifier for the package to be retrieved. (The packageId is available as a response to the CreatePackage API call.</td>
-	<td>string</td>
+	<td>Success</td>
+	<td>Success Message</td>
 	</tr>
 	
-<tr>
+	<tr>
 	<td>
-		<code>documentId</code>
+		<code>551</code>
 		</td>
-	<td>Unique identifier for the document to be retrieved. (The documentId is available as a response to the CreatePackage API call.</td>
-	<td>string</td>
+	<td>OrgName provided does not match the package org name.</td>
+	<td>Validation Error</td>
+	</tr>
+	<tr>
+	<td>
+		<code>572</code>
+		</td>
+	<td>Package Id not provided or is empty.</td>
+	<td>Validation Error</td>
 	</tr>
 
 </tbody>
