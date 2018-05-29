@@ -119,7 +119,7 @@
 					"description": "Package ID",
 					"required": true,
 					"type": "string",
-					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY%3D"
+					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY="
 
 				}, {
 					"name": "orgName",
@@ -169,7 +169,7 @@
 					"description": "Package ID",
 					"required": true,
 					"type": "string",
-					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY%3D"
+					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY="
 
 				}, {
 					"name": "orgName",
