@@ -119,7 +119,7 @@
 					"description": "Package ID",
 					"required": true,
 					"type": "string",
-					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY="
+					"default": "Kn4TR2syiAH7v0Aow_Hm6gv4Yc0="
 
 				}, {
 					"name": "orgName",
@@ -127,7 +127,7 @@
 					"description": "ORG Name",
 					"required": true,
 					"type": "string",
-					"default": "RETA"
+					"default": "OFM-STR"
 
 				}, {
 					"name": "documentId",
@@ -135,7 +135,7 @@
 					"description": "Document ID",
 					"required": true,
 					"type": "string",
-					"default": "efeb4f89104d409df6580400747fc8a4cf9ef420887566a2"
+					"default": "56ffc32868d457d0b265d29134dbef326a4a7b7a51f101ab"
 
 				}],
 				"responses": {
@@ -169,7 +169,7 @@
 					"description": "Package ID",
 					"required": true,
 					"type": "string",
-					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY="
+					"default": "Kn4TR2syiAH7v0Aow_Hm6gv4Yc0="
 
 				}, {
 					"name": "orgName",
@@ -177,7 +177,7 @@
 					"description": "Package Org Name",
 					"required": true,
 					"type": "string",
-					"default": "RETA"
+					"default": "OFM-STR"
 
 				}],
 				"responses": {
