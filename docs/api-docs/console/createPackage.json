@@ -189,7 +189,7 @@
 					}
 				}
 			}
-		}
+		},
 		"/Packages/CreateMultiPart": {
 			"post": {
 				"tags": ["Packages"],
