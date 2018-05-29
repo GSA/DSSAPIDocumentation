@@ -98,6 +98,98 @@
 				}]
 			}
 		},
+		"/Packages/Document": {
+			"get": {
+				"tags": ["Packages"],
+				"summary": "Retrieves a Document from Package",
+				"description": "This API enables applications to retrieve the signed documents. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"operationId": "downloadIndividualDocument",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+
+				}, {
+					"name": "packageId",
+					"in": "query",
+					"description": "Package ID",
+					"required": true,
+					"type": "string",
+					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY%3D"
+
+				}, {
+					"name": "orgName",
+					"in": "query",
+					"description": "ORG Name",
+					"required": true,
+					"type": "string",
+					"default": "RETA"
+
+				}, {
+					"name": "documentId",
+					"in": "query",
+					"description": "Document ID",
+					"required": true,
+					"type": "string",
+					"default": "efeb4f89104d409df6580400747fc8a4cf9ef420887566a2"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64  Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
+			}
+		},
+		"/Packages/Retrieve": {
+			"get": {
+				"tags": ["Packages"],
+				"summary": "Retrieves Package Documents",
+				"description": "This API enables applications to retrieve the signed documents. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"operationId": "downloadDocuments",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key for api.gsa.gov",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+
+				}, {
+					"name": "packageId",
+					"in": "query",
+					"description": "Package ID",
+					"required": true,
+					"type": "string",
+					"default": "qkl04u3arT0tM4-IoS3HVOPfGjY%3D"
+
+				}, {
+					"name": "orgName",
+					"in": "query",
+					"description": "Package Org Name",
+					"required": true,
+					"type": "string",
+					"default": "RETA"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64 Zipped Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
+			}
+		}
 		"/Packages/CreateMultiPart": {
 			"post": {
 				"tags": ["Packages"],
