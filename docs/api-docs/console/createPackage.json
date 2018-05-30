@@ -190,6 +190,34 @@
 				}
 			}
 		},
+		"/Packages/Status": {
+			"post": {
+				"tags": ["Packages"],
+				"summary": "Get Package Status",
+				"description": "This API enables applications to get the status of a given Package. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"operationId": "dssPackageStatus",
+				"consumes": ["application/json"],
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string",
+					"format": "string",
+					"default": "DEMO_KEY"
+				}, {
+					"name": "body",
+					"in": "body",
+					"description": "JSON Data",
+					"required": true,
+					"type": "string",
+					"format": "string",
+					"default": "{\"packageId\": \"HIi_1yNSjVtPQGH_Ck1QKEf1MgE%3D\"}"
+
+				}]
+			}
+		},
 		"/Packages/CreateMultiPart": {
 			"post": {
 				"tags": ["Packages"],
