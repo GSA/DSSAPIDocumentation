@@ -218,6 +218,50 @@
 				}]
 			}
 		},
+			
+		"/Packages/signingURL/{packageID}/roleId/{roleId}": {
+			"get": {
+				"tags": ["Packages"],
+				"summary": "Retrieves Signing URL",
+				"description": "This API enables applications to retrieve the signing URL for a given package and signer. The API is provisioned as a RESTful service and uses path paramater as the data interchange format.",
+				"operationId": "getSignerURLforRoleID",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key",
+					"required": true,
+					"type": "string",
+					"default": "DEMO_KEY"
+
+				}, {
+					"name": "packageId",
+					"in": "path",
+					"description": "Package ID",
+					"required": true,
+					"type": "string",
+					"default": "EujWOE4buROVebKHEtwjF2lnRWQ="
+
+				}, {
+					"name": "roleId",
+					"in": "path",
+					"description": "Role Id",
+					"required": true,
+					"type": "string",
+					"default": "ContractingOfficer"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64  Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
+			}
+		},
+		
 		"/Packages/CreateMultiPart": {
 			"post": {
 				"tags": ["Packages"],
