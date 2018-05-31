@@ -137,15 +137,7 @@
 					"type": "string",
 					"default": "56ffc32868d457d0b265d29134dbef326a4a7b7a51f101ab"
 
-				}],
-				"responses": {
-					"200": {
-						"description": "Base 64  Document"
-					},
-					"500": {
-						"description": "Internal server error due to encoding the data"
-					}
-				}
+				}]
 			}
 		},
 		"/Packages/Retrieve": {
@@ -179,15 +171,7 @@
 					"type": "string",
 					"default": "OFM-STR"
 
-				}],
-				"responses": {
-					"200": {
-						"description": "Base 64 Zipped Document"
-					},
-					"500": {
-						"description": "Internal server error due to encoding the data"
-					}
-				}
+				}]
 			}
 		},
 		"/Packages/Status": {
@@ -250,15 +234,8 @@
 					"type": "string",
 					"default": "ContractingOfficer"
 
-				}],
-				"responses": {
-					"200": {
-						"description": "Base 64  Document"
-					},
-					"500": {
-						"description": "Internal server error due to encoding the data"
-					}
-				}
+				}]
+				
 			}
 		},
 		
