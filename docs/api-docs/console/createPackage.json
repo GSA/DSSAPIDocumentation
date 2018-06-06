@@ -261,7 +261,7 @@
 					"description": "The file to upload.",
 					"required": true,
 					"type": "file"	
-					}
+					
 				}, {
 					"in": "body",
 					"name": "body",
