@@ -273,7 +273,7 @@
 
 				},{
 					"name": "body",
-					"in": "body",
+					"in": "formData",
 					"description": "JSON Data",
 					"required": true,
 					"type": "string",
