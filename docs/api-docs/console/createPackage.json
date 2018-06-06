@@ -263,24 +263,14 @@
 					"type": "file"	
 					
 				}, {
-					"in": "body",
 					"name": "body",
-					"description": "documents multipart attachment filedata",
-					"required": true,
-					"schema": {
-						"type": "array",
-						"items": {
-							"$ref": "#/definitions/FormDataContentDisposition"
-						}
-					}
-				}, {
 					"in": "body",
-					"name": "body",
-					"description": "Json Body",
+					"description": "JSON Data",
 					"required": true,
-					"schema": {
-						"type": "string"
-					}
+					"type": "string",
+					"format": "string",
+					"default": "{\"packageId\": \"Kn4TR2syiAH7v0Aow_Hm6gv4Yc0%3D\"}"
+				
 				}],
 				"responses": {
 					"default": {
