@@ -250,19 +250,17 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key for api.gsa.gov",
+					"description": "API key",
 					"required": true,
-					"type": "string"
+					"type": "string",
+					"default": "DEMO_KEY"
+
 				}, {
 					"in": "formData",
-					"name": "documents",
-					"description": "documents multipart attachment",
+					"name": "document",
+					"description": "The file to upload.",
 					"required": true,
-					"schema": {
-						"type": "file",
-						"items": {
-							"$ref": "#/definitions/FormDataContentDisposition"
-						}
+					"type": "file"	
 					}
 				}, {
 					"in": "body",
