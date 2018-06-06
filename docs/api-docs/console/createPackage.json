@@ -262,7 +262,16 @@
 					"required": true,
 					"type": "file"	
 					
-				}, {
+				}, 
+				 {
+					"name": "documentDetail",
+					"in": "formData",
+					"description": "File Name",
+					"required": true,
+					"type": "string",
+					"default": "Sample.pdf"
+
+				},{
 					"name": "body",
 					"in": "body",
 					"description": "JSON Data",
