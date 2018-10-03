@@ -137,7 +137,15 @@
 					"type": "string",
 					"default": "56ffc32868d457d0b265d29134dbef326a4a7b7a51f101ab"
 
-				}]
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64  Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
 			}
 		},
 		"/Packages/Retrieve": {
@@ -171,16 +179,23 @@
 					"type": "string",
 					"default": "OFM-STR"
 
-				}]
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64 Zipped Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
 			}
 		},
-		"/Packages/Status": {
-			"post": {
+		"/Packages/v1/Status": {
+			"get": {
 				"tags": ["Packages"],
 				"summary": "Get Package Status",
 				"description": "This API enables applications to get the status of a given Package. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
 				"operationId": "dssPackageStatus",
-				"consumes": ["application/json"],
 				"produces": ["application/json"],
 				"parameters": [{
 					"name": "api_key",
@@ -191,15 +206,66 @@
 					"format": "string",
 					"default": "DEMO_KEY"
 				}, {
-					"name": "body",
-					"in": "body",
-					"description": "JSON Data",
+					"name": "packageId",
+					"in": "query",
+					"description": "Package ID",
+					"required": true,
+					"type": "string",
+					"default": "Kn4TR2syiAH7v0Aow_Hm6gv4Yc0="
+
+				}],
+				"responses": {
+					"200": {
+						"description": "Success Response"
+					},
+					"500": {
+						"description": "Internal server error."
+					}
+				}
+			}
+		},
+		
+		"/Packages/v2/Status": {
+			"get": {
+				"tags": ["Packages"],
+				"summary": "Get Package Status",
+				"description": "This API enables applications to get the status of a given Package. The API is provisioned as a RESTful service and uses JSON as the data interchange format.",
+				"operationId": "dssPackageStatusFromName",
+				"produces": ["application/json"],
+				"parameters": [{
+					"name": "api_key",
+					"in": "query",
+					"description": "API key",
 					"required": true,
 					"type": "string",
 					"format": "string",
-					"default": "{\"packageId\": \"Kn4TR2syiAH7v0Aow_Hm6gv4Yc0%3D\"}"
+					"default": "DEMO_KEY"
+				}, {
+					"name": "packageId",
+					"in": "query",
+					"description": "Package ID",
+					"required": true,
+					"type": "string",
+					"default": "jYFsE5Fim14aJqcRHvDEgL_hNnw="
 
-				}]
+				},
+				{
+					"name": "senderEmail",
+					"in": "query",
+					"description": "Sender Email ID",
+					"required": true,
+					"type": "string",
+					"default": "dssteam@gsa.gov"
+
+				}],
+				"responses": {
+					"200": {
+						"description": "Success Response"
+					},
+					"500": {
+						"description": "Internal server error."
+					}
+				}
 			}
 		},
 			
@@ -234,8 +300,15 @@
 					"type": "string",
 					"default": "ContractingOfficer"
 
-				}]
-				
+				}],
+				"responses": {
+					"200": {
+						"description": "Base 64  Document"
+					},
+					"500": {
+						"description": "Internal server error due to encoding the data"
+					}
+				}
 			}
 		},
 		
@@ -250,34 +323,39 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key",
+					"description": "API key for api.gsa.gov",
 					"required": true,
-					"type": "string",
-					"default": "DEMO_KEY"
-
+					"type": "string"
 				}, {
 					"in": "formData",
-					"name": "document[]",
-					"description": "Upload file.",
+					"name": "documents",
+					"description": "documents multipart attachment",
 					"required": true,
-					"type": "file"
-				}, 
-				 {
-					"name": "documentDetail[]",
-					"in": "formData",
-					"description": "File Name",
-					"required": true,
-					"type": "string",
-					"default": "Sample.pdf"
-
-				},{
+					"schema": {
+						"type": "file",
+						"items": {
+							"$ref": "#/definitions/FormDataContentDisposition"
+						}
+					}
+				}, {
+					"in": "body",
 					"name": "body",
-					"in": "formData",
-					"description": "JSON Data",
+					"description": "documents multipart attachment filedata",
 					"required": true,
-					"type": "string",
-					"format": "string",
-					"default": "{\"orgName\": \"IACP\",\"documents\": [{\"document\": {\"signers\": [{\"signerEmail\": \"dss_team@gsa.gov\",\"signerFirstName\": \"firstName\",\"signerLastName\": \"lastName\",\"searchText\": \"LESSOR\",\"signType\": \"ClickToInitial\",\"signaturePosition\": \"TOPRIGHT\"}],\"documentName\": \"TEST-AAAP-Short.PDF\"}}],\"senderEmail\": \"dssteam@gsa.gov\",\"enableSigningOrder\": true,\"packageOption\": \"create\",\"packageName\": \"DSSAPIDocTestSample\"}"
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/FormDataContentDisposition"
+						}
+					}
+				}, {
+					"in": "body",
+					"name": "body",
+					"description": "Json Body",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
 				}],
 				"responses": {
 					"default": {
@@ -297,26 +375,56 @@
 				"parameters": [{
 					"name": "api_key",
 					"in": "query",
-					"description": "API key",
+					"description": "API key for api.gsa.gov",
 					"required": true,
-					"type": "string",
-					"default": "DEMO_KEY"
-
+					"type": "string"
 				}, {
-					"in": "formData",
-					"name": "document",
-					"description": "The file to upload.",
-					"required": true,
-					"type": "file"	
-					
-				}, {
-					"name": "body",
 					"in": "body",
-					"description": "JSON Data",
-					"required": true,
-					"type": "string",
-					"format": "string",
-					"default": "{\"orgName\": \"IACP\",\"documents\": [{\"document\": {\"signers\": [{\"signerEmail\": \"dss_test@gsa.gov\",\"signerFirstName\": \"firstName\",\"signerLastName\": \"lastName\",\"placeHolderName\": \"ContractingOfficer\"}],\"documentName\": \"TEST-AAAP-Short.PDF\",\"layoutName\": \"Fleet STR SF1449 Layout\"}}],\"senderEmail\": \"dssteam@gsa.gov\",\"enableSigningOrder\": true,\"packageOption\": \"create\",\"packageName\": \"DSSAPIDocSample2\"}"
+					"name": "body",
+					"required": false,
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/FormDataBodyPart"
+						}
+					}
+				}, {
+					"in": "body",
+					"name": "body",
+					"required": false,
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/FormDataContentDisposition"
+						}
+					}
+				}, {
+					"in": "body",
+					"name": "body",
+					"required": false,
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/FormDataBodyPart"
+						}
+					}
+				}, {
+					"in": "body",
+					"name": "body",
+					"required": false,
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "#/definitions/FormDataContentDisposition"
+						}
+					}
+				}, {
+					"in": "body",
+					"name": "body",
+					"required": false,
+					"schema": {
+						"type": "string"
+					}
 				}],
 				"responses": {
 					"default": {
