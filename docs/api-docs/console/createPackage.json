@@ -241,12 +241,12 @@
 					"format": "string",
 					"default": "DEMO_KEY"
 				}, {
-					"name": "packageId",
+					"name": "packageName",
 					"in": "query",
-					"description": "Package ID",
+					"description": "Package Name",
 					"required": true,
 					"type": "string",
-					"default": "jYFsE5Fim14aJqcRHvDEgL_hNnw="
+					"default": "APIDocExample"
 
 				},
 				{
