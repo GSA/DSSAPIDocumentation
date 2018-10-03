@@ -1,49 +1,60 @@
 ---
+layout: default
+title: Field Reference
+nav: fields 
 ---
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>DSS API Key Sign Up page - GSA</title>
-  <link rel="stylesheet" href="../static/css/normalize.css">
-  <link rel="stylesheet" href="../static/css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 
-  <!--[if IE]>
-  <link rel="stylesheet" href="../static/css/for-ie-only.css">
-  <![endif]-->
-</head>
-<body>
+<h3>Field reference for Sample API data</h3>
+
+<p>The fields below are returned in the Sample API.</p> 
+<p>Add additional information about fields.</p> 
 
 
-  <header class="header cf" role="banner">
-      {% include header.html %}
-  </header>
+<h5>Create Package API Fields</h5>
 
-  <div class="wrap">
-    <div class="content">
+<table id="city-pairs-fields" class="field-table">
+	<colgroup>
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 36%;">
+		<col span="1" style="width: 18%;">
+		
+	</colgroup>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+<th>Data type</th>
 
-    <aside>
-    {% include nav.html %}
-    </aside>
+</tr>
+</thead>
+<tbody>
 
-    <section class="main-content" role="main">
-      {{ content }}
-    </section>
+<tr>
+	<td>
+		<code>orgName</code>
+		</td>
+	<td>This is the unique identifier provided by the DSS team to each of the subscribers of the API as part of the on-boarding process.</td>
+	<td>string</td>
+	</tr>
 
-    </div>
-  </div> <!--wrap-->
+<tr>
+	<td>
+		<code>packageName</code>
+		</td>
+	<td>User defined name for the package. The API supports max size of 64 characters.</td>
+	<td>string</td>
+	</tr>
 
-    <footer class="footer cf" role="contentinfo">
-      <div class="wrap">
-        {% include footer.html %}
-      </div>
-    </footer>
-  <script src="../static/js/docs.min.js"></script>
-  <script type="text/javascript" src="../static/js/expandables.js"></script>
+<tr>
+	<td>
+		<code>senderEmail</code>
+		</td>
+	<td>Email address of the Sender / owner of the package.  The API supports max size of 100 characters.</td>
+	<td>string</td>
+	</tr>
+
+</tbody>
+</table>
+
+<body id="fields">
 </body>
-</html>
