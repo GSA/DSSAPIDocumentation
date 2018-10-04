@@ -3,7 +3,7 @@ layout: default
 title: Request an API Key
 nav: api_key_signup
 ---
-ATTENTION: We have transitioned to include an email verification step for SAM Application Programming Interface (API) key sign up. All API keys used to access SAM APIs must have a verified email address. If your existing API key no longer works, please submit a new request.
+ATTENTION: We have transitioned to include an email verification step for DSS Application Programming Interface (API) key sign up. All API keys used to access DSS APIs must have a verified email address. If your existing API key no longer works, please submit a new request.
 
 {% raw %}
 <div id="apidatagov_signup">Loading signup form...</div>
